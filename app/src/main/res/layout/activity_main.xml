@@ -53,6 +53,14 @@
         android:padding="@dimen/padding_small"
         android:text="@string/btn_devide"
         android:textSize="@dimen/text_size_medium" />
+    <Button
+        android:id="@+id/btn_mod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:padding="@dimen/padding_small"
+        android:text="나머지"
+        android:textSize="@dimen/text_size_medium" />
     <TextView
         android:id="@+id/text_result"
         android:layout_width="match_parent"
@@ -64,5 +72,6 @@
         android:textSize="@dimen/text_size_large"
         android:textStyle="bold"
         android:textColor="@color/text_result_color" />
+
 
 </LinearLayout>
