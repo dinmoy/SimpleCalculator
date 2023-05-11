@@ -17,5 +17,39 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        title="초간단 계산기"
+
+        edit1=findViewById<EditText>(R.id.edit1)
+        edit2=findViewById<EditText>(R.id.edit2)
+        textResult=findViewById(R.id.text_result)
+        btnAdd=findViewById(R.id.btn_plus)
+        btnSub=findViewById(R.id.btn_minus)
+        btnMul=findViewById(R.id.btn_multiply)
+        btnDiv=findViewById(R.id.btn_devide)
+        btnAdd.setOnClickListener{
+            num1=edit1.text.toString()
+            num2=edit2.text.toString()
+            result=Integer.parseInt(num1)+Integer.parseInt(num2)
+            textResult.text="계산 결과: "+result
+        }
+        btnSub.setOnClickListener{
+            num1=edit1.text.toString()
+            num2=edit2.text.toString()
+            result=Integer.parseInt(num1)-Integer.parseInt(num2)
+            textResult.text="계산 결과: "+result
+        }
+        btnMul.setOnClickListener{
+            num1=edit1.text.toString()
+            num2=edit2.text.toString()
+            result=Integer.parseInt(num1)*Integer.parseInt(num2)
+            textResult.text="계산 결과: "+result
+        }
+        btnDiv.setOnClickListener{
+            num1=edit1.text.toString()
+            num2=edit2.text.toString()
+            result=Integer.parseInt(num1)/Integer.parseInt(num2)
+            textResult.text="계산 결과: "+result
+        }
+
     }
 }
